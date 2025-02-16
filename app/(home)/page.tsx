@@ -5,8 +5,9 @@ export const metadata = {
 import Link from "next/link";
 import styles from "./../../styles/home.module.css";
 import Movie from "../../components/movie";
+import { API_URL } from "../constants";
 
-const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
+
 
 async function getMovies() {
   const response = await fetch(API_URL);
